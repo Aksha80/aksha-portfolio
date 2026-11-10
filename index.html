@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Aksha Dadala | Software Engineer & Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Aksha Dadala, a Software Engineer based in India specializing in ServiceNow, ML, and web development. Explore my projects, skills, and experience." />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://akshadadala.dev/" />
+    <meta property="og:title" content="Aksha Dadala | Software Engineer Portfolio" />
+    <meta property="og:description" content="Portfolio of Aksha Dadala, a Software Engineer based in India specializing in ServiceNow, ML, and web development." />
+    <meta property="og:image" content="/avatar.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://akshadadala.dev/" />
+    <meta property="twitter:title" content="Aksha Dadala | Software Engineer Portfolio" />
+    <meta property="twitter:description" content="Portfolio of Aksha Dadala, a Software Engineer based in India specializing in ServiceNow, ML, and web development." />
+    <meta property="twitter:image" content="/avatar.jpg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Theme Initializer (prevents FOUT) -->
+    <script>
+      (function() {
+        try {
+          const saved = localStorage.getItem('theme');
+          if (saved === 'light') {
+            document.documentElement.classList.remove('dark');
+          } else {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (_) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
