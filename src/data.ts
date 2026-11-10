@@ -1,3 +1,6 @@
+import libraryManagementImg from './assets/library_management.jpg';
+import intrusionDetectionImg from './assets/intrusion_detection.jpg';
+
 export const portfolioData = {
   name: "Aksha Dadala",
   role: "Software Engineer & Developer",
@@ -55,7 +58,7 @@ export const portfolioData = {
       title: "Library Management System",
       category: "Service Web Platform",
       platform: "ServiceNow Platform",
-      image: "/src/assets/library_management.jpg",
+      image: libraryManagementImg,
       summary: "Designed and developed a custom ServiceNow application by creating and extending tables (Books, Members, Transactions) with relationships, ensuring structured data management.",
       technologies: ["ServiceNow", "JavaScript", "Automation"],
       description: [
@@ -69,7 +72,7 @@ export const portfolioData = {
       title: "Intrusion Detection System Performance",
       category: "Machine Learning",
       platform: "Machine Learning",
-      image: "/src/assets/intrusion_detection.jpg",
+      image: intrusionDetectionImg,
       summary: "Implemented and compared ML classifiers for anomaly detection using CICIDS2018 dataset.",
       technologies: ["Jupyter Notebook", "Python", "Machine Learning"],
       description: [

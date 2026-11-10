@@ -3,6 +3,7 @@ import { portfolioData } from '../data';
 import { ExternalLink, FolderGit2, Sparkles, ZoomIn, CheckCircle2 } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
 import { useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { ProjectModal } from './ProjectModal';
 
 function ProjectCard({ project, index, onOpen }: { project: any, index: number, onOpen: () => void }) {
@@ -161,11 +162,12 @@ export function Projects() {
         </div>
       </div>
 
-      {selectedProject && (
+      {selectedProject && typeof document !== 'undefined' && createPortal(
         <ProjectModal 
           project={selectedProject} 
           onClose={() => setSelectedProject(null)} 
-        />
+        />,
+        document.body
       )}
     </section>
   );
